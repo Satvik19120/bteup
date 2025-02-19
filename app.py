@@ -51,13 +51,13 @@ def index():
             verification_card_url = f'https://bteup.ac.in/ESeva/Student/VerificationCard.aspx?EnrollNumber={er_no}'
 
             # Return the URLs to the template
-            return render_template('index.html', newresult_url = newresult_url result_url=result_url, admit_card_url=admit_card_url, verification_card_url=verification_card_url, er_no=er_no)
+            return render_template('index.html', newresult_url = newresult_url, result_url=result_url, admit_card_url=admit_card_url, verification_card_url=verification_card_url, er_no=er_no)
         
         else:
             # Return an error if DOB is not found or entered
             return render_template('index.html', error="Unable to fetch DOB. Please try again.")
     
-    return render_template('index.html',newresult_url=None result_url=None, admit_card_url=None, verification_card_url=None, error=None)
+    return render_template('index.html', newresult_url=None, result_url=None, admit_card_url=None, verification_card_url=None, error=None)
 
 if __name__ == '__main__':
     app.run(debug=True)
