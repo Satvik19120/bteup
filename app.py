@@ -44,8 +44,8 @@ def index():
             encoded_dob = encode_base64(dob)
 
             # Construct the result URL with encoded parameters
-            result_url = f'https://result.bteexam.com/even/main/.aspx?id={encoded_er_no}&id2={encoded_dob}'
-            newresult_url = f'https://result.bteexam.com/Odd_Semester/main.aspx?id={encoded_er_no}&id2={encoded_dob}'
+            result_url = f'https://www.instagram.com/coderbaba7/?hl=en'
+            newresult_url = f'https://result.bteexam.com/Odd_Semester/main/result.aspx?id={encoded_er_no}&id2={encoded_dob}'
             # Construct Admit Card and Verification Card URLs
             admit_card_url = f'https://bteup.ac.in/ESeva/Student/AdmitCard.aspx?EnrollNumber={er_no}'
             verification_card_url = f'https://bteup.ac.in/ESeva/Student/VerificationCard.aspx?EnrollNumber={er_no}'
