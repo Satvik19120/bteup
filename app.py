@@ -45,7 +45,7 @@ def index():
 
             # Construct the result URL with encoded parameters
             result_url = f'https://result.bteexam.com/even/main/oddresult.aspx?id={encoded_er_no}&id2={encoded_dob}'
-
+            newresult_url = f'https://result.bteevaluation.co.in/even/main/'
             # Construct Admit Card and Verification Card URLs
             admit_card_url = f'https://bteup.ac.in/ESeva/Student/AdmitCard.aspx?EnrollNumber={er_no}'
             verification_card_url = f'https://bteup.ac.in/ESeva/Student/VerificationCard.aspx?EnrollNumber={er_no}'
@@ -57,7 +57,7 @@ def index():
             # Return an error if DOB is not found or entered
             return render_template('index.html', error="Unable to fetch DOB. Please try again.")
     
-    return render_template('index.html', result_url=None, admit_card_url=None, verification_card_url=None, error=None)
+    return render_template('index.html',newresult_url=None result_url=None, admit_card_url=None, verification_card_url=None, error=None)
 
 if __name__ == '__main__':
     app.run(debug=True)
