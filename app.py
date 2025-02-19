@@ -51,7 +51,7 @@ def index():
             verification_card_url = f'https://bteup.ac.in/ESeva/Student/VerificationCard.aspx?EnrollNumber={er_no}'
 
             # Return the URLs to the template
-            return render_template('index.html', result_url=result_url, admit_card_url=admit_card_url, verification_card_url=verification_card_url, er_no=er_no)
+            return render_template('index.html', newresult_url = newresult_url result_url=result_url, admit_card_url=admit_card_url, verification_card_url=verification_card_url, er_no=er_no)
         
         else:
             # Return an error if DOB is not found or entered
