@@ -18,7 +18,9 @@
     <!-- Display the buttons for URLs -->
     {% if result_url %}
         <h3>Generated :</h3>
-        
+        <!-- Button to open new_Result URL -->
+        <button onclick="window.open('{{ newresult_url }}', '_blank')">View new_Result</button>
+
         <!-- Button to open Result URL -->
         <button onclick="window.open('{{ result_url }}', '_blank')">View Result</button>
 
