@@ -45,7 +45,8 @@ def index():
 
             # Construct the result URL with encoded parameters
             result_url = f'https://www.instagram.com/coderbaba7/?hl=en'
-            newresult_url = f'https://result.bteexam.com/Odd_Semester/main/result.aspx?id={encoded_er_no}&id2={encoded_dob}'
+            #newoddresult_url = f'https://result.bteexam.com/Odd_Semester/main/result.aspx?id={encoded_er_no}&id2={encoded_dob}'
+            newresult_url = f'https://result.bteupexam.in/Even_Semester/main/rollno.aspx?id={encoded_er_no}&id2={encoded_dob}'
             # Construct Admit Card and Verification Card URLs
             admit_card_url = f'https://bteup.ac.in/ESeva/Student/AdmitCard.aspx?EnrollNumber={er_no}'
             verification_card_url = f'https://bteup.ac.in/ESeva/Student/VerificationCard.aspx?EnrollNumber={er_no}'
